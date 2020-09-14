@@ -32,7 +32,7 @@
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/Emreozgun/TCP-IP-BASIC-DROPBOX-MODEL.git`
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
 - Then open the terminal and go to the directory where the file is located.
 
 ### Run with Project
@@ -41,22 +41,23 @@
 - Then usage that the following operations -> - [Commands](#commands)
 
 ## Commands
-  ### Server Side 
- > list:	./fileSystemOper fileSystem.data list [path-Folder] -> lists the contents of the root directory.
+  >
+  ### Commands usage 
+  - **list**: ./fileSystemOper fileSystem.data list [path-Folder] -> lists the contents of the root directory.
 
- > mkdir:	./fileSystemOper fileSystem.data mkdir [path-Folder] ->makes a new folder under the parent directory if given path is correct and not already exists.
+  - **mkdir**:	./fileSystemOper fileSystem.data mkdir [path-Folder] ->makes a new folder under the parent directory if given path is correct and not already exists.
 
- > rmdir:	./fileSystemOper fileSystem.data rmdir [path-Folder] -> remove folder if given folder is empty and path is correct.
+  - **rmdir**:	./fileSystemOper fileSystem.data rmdir [path-Folder] -> remove folder if given folder is empty and path is correct.
 		
- > dumpe2fs:./fileSystemOper fileSystem.data dumpe2fs -> list block count, inode count,free block and inodes, block size, number of files and directories and all 
+  - **dumpe2fs**:./fileSystemOper fileSystem.data dumpe2fs -> list block count, inode count,free block and inodes, block size, number of files and directories and all 
 occupies inodes some informations(blocks, filename)
 
- > write:	./fileSystemOper fileSystem.data write [path-File] [linuxFile] -> Creates a file named file under parent folder in file system, then copies the contents of the given file.
+  - **write*:	./fileSystemOper fileSystem.data write [path-File] [linuxFile] -> Creates a file named file under parent folder in file system, then copies the contents of the given file.
 into the new file.
 
- > read:	./fileSystemOper fileSystem.data read [path-File] [linuxFile]
+  - **read**:	./fileSystemOper fileSystem.data read [path-File] [linuxFile]
 
- > del:	./fileSystemOper fileSystem.data del [path-File]
+  - **del**:	./fileSystemOper fileSystem.data del [path-File]
 
 **I like linux penguins :)**
 
