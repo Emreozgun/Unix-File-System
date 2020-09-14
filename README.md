@@ -1,8 +1,15 @@
 # TCP-IP-BASIC-DROPBOX-MODEL
 
-> In this project, There is client-server architecture model. The server is expected to backup according to the directory provided by the client. Clients can be online after connecting to the server via the same port and IP address, and all changes made on the client side must be reflected on the server side (Add / remove / update). The multi-thread server side should be able to serve more than one client at the same time. All processes are hold in the log file.
+- In this project, It has been designed and implemented a simplifies UNIX like file system in C++. File system that uses i-nodes blocks and data blocks to keep your files and use, a i-node structure as single link i-nodes(not supports double link and triple link i-nodes).File attributes will include size, last
+modification date and time, and name of the file. No permissions or owner attributes will be kept.
+**Add Fig 4.33-Fig 4.34**
+- Program that creates an empty file system as a 1 MB Linux file. This file includes all the information about file system including the i-nodes, data blocks, free blocks and i-nodes, directories, data, etc.
+- The sample run of the program will be like  -> **makeFileSystem 4 400 mySystem.dat**
 
-> This project is an application that runs through the console.
+where 4 is the block size of the file system in KB for both data blocks and i-node blocks, and 400 is the number of free i-nodes for an empty file system. mySystem.dat is the Linux file that contains all the file system. When you work on the file system, this file contains all the information for the file system. The size of mySystem.dat will be exactly 1 MB all the time whether it contains any information or not.
+
+-And program that performs file system operation on the file system. You can observe all system operation -> [Commands usage](#commands-usage)
+
 
 ![Badges](https://img.shields.io/badge/linux-shell-green) 
 ![Badges](https://img.shields.io/badge/love-coding-black.svg)
@@ -51,7 +58,7 @@ To Superblock, It has been calculated number of blocks as block size and remaini
 ## Compile
 - Compile and run with **g++ -Werror -o makeFileSystem makeFileSystem.cpp && ./makeFileSystem [BlockSize] [inodeCount] [fileSystem-Data file]** to create the file system.
 - Compile **g++ -Werror -o ./fileSystemOper  fileSystemOper.cpp** to perform operations in file system.
-- Then usage that the following operations -> - [Commands usage ](#cmdusage)
+- Then usage that the following operations -> - [Commands usage](#commands-usage)
 
 ## Commands
   - **list** : Lists the contents of the directory shown by path on the screen.
@@ -62,7 +69,7 @@ To Superblock, It has been calculated number of blocks as block size and remaini
   - **read** : Reads data from the file.
   - **del** : Deletes file from the path.
 
-  ### Commands usage 
+  ### Commands usage
   - **list**: ./fileSystemOper fileSystem.data list [path-Folder]
 
   - **mkdir**:	./fileSystemOper fileSystem.data mkdir [path-Folder] 
