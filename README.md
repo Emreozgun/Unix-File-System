@@ -55,8 +55,11 @@ To Superblock, It has been calculated number of blocks as block size and remaini
 
 ## Compile
 - Compile and run with **g++ -Werror -o makeFileSystem makeFileSystem.cpp && ./makeFileSystem [BlockSize] [inodeCount] [fileSystem-Data file]** to create the file system.
+- g++ -Werror -o p1 makeFileSystem.cpp  && g++ -Werror -o p2  fileSystemOper.cpp 
 - Compile **g++ -Werror -o ./fileSystemOper  fileSystemOper.cpp** to perform operations in file system.
 - Then usage that the following operations -> - [Commands usage](#commands-usage)
+## Compile with debug mode 
+- You can add **-DDEBUG** keyword end of the compile command  **g++ -Werror -o makeFileSystem makeFileSystem.cpp -DDEBUG**
 
 ## Commands
   - **list** : Lists the contents of the directory shown by path on the screen.
