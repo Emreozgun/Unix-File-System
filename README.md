@@ -27,6 +27,17 @@
 - [Support](#support)
 
 ## Architecture of File system
+![arch_file_system](https://user-images.githubusercontent.com/30092986/93148066-94afe100-f6fb-11ea-8934-8326aaad16d5.png)
+
+There are 5 main structures in the above file system. It is placed in 1mb file system in order from left to right. Superblock holds metadata about all file system. Bitmaps connects inodes and blocks to apply operations.It holds emptiness or fullness information specific inodes or blocks.(1 or 0).
+
+The Inode describes a file system object such as file,directory,links etc. Each inode stores the **metadata**(last modification,name,size etc.) about objects,block locations. 
+
+It has been placed unused part between Inode and blocks. Because the start of the superblock and the end of the file system should be at a modularly easy computable value. It has been calculated size that cannot be created as block.
+
+Unused part = 1 mb - sizeof(Superblock + Bitmaps + Inodes + blocks)
+
+To Superblock, It has been calculated number of blocks as block size and remaining from other informations(superblock,bitmaps,inode).
 
 ## Installation
 
