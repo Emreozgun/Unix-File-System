@@ -64,9 +64,6 @@
 
   - **del**:	./fileSystemOper fileSystem.data del [path-File]
 
-**I like linux penguins :)**
-
-![ttystudio GIF](https://media.giphy.com/media/4Zgy9QqzWU8C3ugvCa/giphy.gif)
 
 ## Support
 
