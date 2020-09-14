@@ -27,6 +27,17 @@
 - [Support](#support)
 
 ## Architecture of Filesystem
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
 
 ## Installation
 
