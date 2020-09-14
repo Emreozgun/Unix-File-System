@@ -23,7 +23,7 @@
 
 - [Installation](#installation)
 - [Run with Project](#run)
-- [Features](#features)
+- [Commands](#commands)
 - [Support](#support)
 
 ## Installation
@@ -35,32 +35,33 @@
 - Clone this repo to your local machine using `https://github.com/Emreozgun/TCP-IP-BASIC-DROPBOX-MODEL.git`
 - Then open the terminal and go to the directory where the file is located.
 
-### Run
-- Run with **make all && ./server [directory] [threadPoolSize] [portnumber] && ./client [dirName] [ip address] [portnumber]** 
-- If you want to clean executable files,you can use **make clean** 
+### Run with Project
+- Compile and run with **g++ -Werror -o makeFileSystem makeFileSystem.cpp && ./makeFileSystem [BlockSize] [inodeCount] [fileSystem-Data file]** to create the file system.
+- Compile **g++ -Werror -o ./fileSystemOper  fileSystemOper.cpp** to perform operations in file system.
+- Then usage that the following operations -> - [Commands](#commands)
 
-## Features
+## Commands
   ### Server Side 
- > server [directory] [threadPoolSize] [portnumber]
- 
- > where the directory is the servers specific area for file operations (there shouldn’t be multiple servers running on the same directory in the same computer), threadPoolSize is the maximum number of threads active at a time (meaning maximum number of active connected clients), portnumber is the port server will wait for connection.
- 
- > The server side is  backup the files of the client by mirroring. While the client is connected to the server,   modifications done to client’s directory (add, delete or modify file) also be done in the server side. Therefore, the two directories are consistent while the connection is active. The server is able to handle multiple clients at the same time (a multi-threaded internet server). The server is also log the create, delete and update operations of all files in a log file under the corresponding directory reserved for the client. 
-  
-  ### Client Side 
- > client [dirName] [ip address] [portnumber]
- 
- > where dirName is the name of the directory in the computer where client is called, and ip address and portnumber is the connection address and port of the server (ex. 10.1.18.44 18232). The path of the
-directory identifies each client. When a client that was connected before connects again, it will receive missing files from the server if there is any. The files that were created or modified while the client is offline is detected and copied to the server side after connecting.
-> 
+ > list:	./fileSystemOper fileSystem.data list [path-Folder] -> lists the contents of the root directory.
 
+ > mkdir:	./fileSystemOper fileSystem.data mkdir [path-Folder] ->makes a new folder under the parent directory if given path is correct and not already exists.
+
+ > rmdir:	./fileSystemOper fileSystem.data rmdir [path-Folder] -> remove folder if given folder is empty and path is correct.
+		
+ > dumpe2fs:./fileSystemOper fileSystem.data dumpe2fs -> list block count, inode count,free block and inodes, block size, number of files and directories and all 
+occupies inodes some informations(blocks, filename)
+
+ > write:	./fileSystemOper fileSystem.data write [path-File] [linuxFile] -> Creates a file named file under parent folder in file system, then copies the contents of the given file.
+into the new file.
+
+ > read:	./fileSystemOper fileSystem.data read [path-File] [linuxFile]
+
+ > del:	./fileSystemOper fileSystem.data del [path-File]
 
 **I like linux penguins :)**
 
 ![ttystudio GIF](https://media.giphy.com/media/4Zgy9QqzWU8C3ugvCa/giphy.gif)
 
-
-  
 ## Support
 
 Reach out to me at one of the following places!
