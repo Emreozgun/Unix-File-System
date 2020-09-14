@@ -20,7 +20,7 @@
 ---
 
 ## Table of Contents
-- [Architecture of File system](#architecture of file system)
+- [Architecture of File system](#architectureoffilesystem)
 - [Installation](#installation)
 - [Compile](#compile)
 - [Commands](#commands)
