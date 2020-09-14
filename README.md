@@ -22,7 +22,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Run with Project](#run)
+- [Compile](#compile)
 - [Commands](#commands)
 - [Support](#support)
 
@@ -35,19 +35,19 @@
 - Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
 - Then open the terminal and go to the directory where the file is located.
 
-### Run with Project
+## Compile
 - Compile and run with **g++ -Werror -o makeFileSystem makeFileSystem.cpp && ./makeFileSystem [BlockSize] [inodeCount] [fileSystem-Data file]** to create the file system.
 - Compile **g++ -Werror -o ./fileSystemOper  fileSystemOper.cpp** to perform operations in file system.
 - Then usage that the following operations -> - [Commands usage ](#cmdusage)
 
 ## Commands
-  > **list** : Lists the contents of the directory shown by path on the screen.
-  > **mkdir** : Create the directory, if they do not already exist.
-  > **rmdir** :  Remove directory if given directory is empty and path is correct.
-  > **dumpe2fs** : List block count, inode count,free block and inodes, block size, number of files and directories and all occupies inodes some informations(blocks, filename)
-  > **write** : Creates and writes data to the file.
-  > **read** : Reads data from the file.
-  > **del** : Deletes file from the path.
+  - **list** : Lists the contents of the directory shown by path on the screen.
+  - **mkdir** : Create the directory, if they do not already exist.
+  - **rmdir** :  Remove directory if given directory is empty and path is correct.
+  - **dumpe2fs** : List block count, inode count,free block and inodes, block size, number of files and directories and all occupies inodes some informations(blocks, filename)
+  - **write** : Creates and writes data to the file.
+  - **read** : Reads data from the file.
+  - **del** : Deletes file from the path.
 
   ### Commands usage 
   - **list**: ./fileSystemOper fileSystem.data list [path-Folder]
