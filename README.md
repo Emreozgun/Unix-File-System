@@ -20,24 +20,13 @@
 ---
 
 ## Table of Contents
-- [Architecture of File system](#archFileSystem)
+- [Architecture of File system](#architecture of file system)
 - [Installation](#installation)
 - [Compile](#compile)
 - [Commands](#commands)
 - [Support](#support)
 
-## Architecture of Filesystem
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
-- Clone this repo to your local machine using **https://github.com/Emreozgun/Unix-File-System.git**
+## Architecture of File system
 
 ## Installation
 
