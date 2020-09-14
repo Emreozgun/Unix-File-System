@@ -20,11 +20,13 @@
 ---
 
 ## Table of Contents
-
+- [Architecture of File system](#archFileSystem)
 - [Installation](#installation)
 - [Compile](#compile)
 - [Commands](#commands)
 - [Support](#support)
+
+## Architecture of Filesystem
 
 ## Installation
 
