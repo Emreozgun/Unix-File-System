@@ -1,4 +1,4 @@
-# TCP-IP-BASIC-DROPBOX-MODEL
+# Unix File System 
 
 - In this project, It has been designed and implemented a simplifies UNIX like file system in C++. File system that uses i-nodes blocks and data blocks to keep your files and use, a i-node structure as single link i-nodes(not supports double link and triple link i-nodes).File attributes will include size, last
 modification date and time, and name of the file. No permissions or owner attributes will be kept.
