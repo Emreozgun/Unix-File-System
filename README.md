@@ -6,9 +6,10 @@ modification date and time, and name of the file. No permissions or owner attrib
 - Program that creates an empty file system as a 1 MB Linux file. This file includes all the information about file system including the i-nodes, data blocks, free blocks and i-nodes, directories, data, etc.
 - The sample run of the program will be like  -> **makeFileSystem 4 400 mySystem.dat**
 
-where 4 is the block size of the file system in KB for both data blocks and i-node blocks, and 400 is the number of free i-nodes for an empty file system. mySystem.dat is the Linux file that contains all the file system. When you work on the file system, this file contains all the information for the file system. The size of mySystem.dat will be exactly 1 MB all the time whether it contains any information or not.
+- where 4 is the block size of the file system in KB for both data blocks and i-node blocks, and 400 is the number of free i-nodes for an empty file system. mySystem.dat is the Linux file that contains all the file system. When you work on the file system, this file contains all the information for the file system. The size of mySystem.dat will be exactly 1 MB all the time whether it contains any information or not.
 
--And program that performs file system operation on the file system. You can observe all system operation -> [Commands usage](#commands-usage)
+- And program that performs file system operation on the file system. 
+You can observe all system operation -> [Commands usage](#commands-usage)
 
 
 ![Badges](https://img.shields.io/badge/linux-shell-green) 
