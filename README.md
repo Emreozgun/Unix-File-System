@@ -38,22 +38,27 @@
 ### Run with Project
 - Compile and run with **g++ -Werror -o makeFileSystem makeFileSystem.cpp && ./makeFileSystem [BlockSize] [inodeCount] [fileSystem-Data file]** to create the file system.
 - Compile **g++ -Werror -o ./fileSystemOper  fileSystemOper.cpp** to perform operations in file system.
-- Then usage that the following operations -> - [Commands](#commands)
+- Then usage that the following operations -> - [Commands usage ](#cmdusage)
 
 ## Commands
-  >
+  > **list** : Lists the contents of the directory shown by path on the screen.
+  > **mkdir** : Create the directory, if they do not already exist.
+  > **rmdir** :  Remove directory if given directory is empty and path is correct.
+  > **dumpe2fs** : List block count, inode count,free block and inodes, block size, number of files and directories and all occupies inodes some informations(blocks, filename)
+  > **write** : Creates and writes data to the file.
+  > **read** : Reads data from the file.
+  > **del** : Deletes file from the path.
+
   ### Commands usage 
-  - **list**: ./fileSystemOper fileSystem.data list [path-Folder] -> lists the contents of the root directory.
+  - **list**: ./fileSystemOper fileSystem.data list [path-Folder]
 
-  - **mkdir**:	./fileSystemOper fileSystem.data mkdir [path-Folder] ->makes a new folder under the parent directory if given path is correct and not already exists.
+  - **mkdir**:	./fileSystemOper fileSystem.data mkdir [path-Folder] 
 
-  - **rmdir**:	./fileSystemOper fileSystem.data rmdir [path-Folder] -> remove folder if given folder is empty and path is correct.
+  - **rmdir**:	./fileSystemOper fileSystem.data rmdir [path-Folder]
 		
-  - **dumpe2fs**:./fileSystemOper fileSystem.data dumpe2fs -> list block count, inode count,free block and inodes, block size, number of files and directories and all 
-occupies inodes some informations(blocks, filename)
+  - **dumpe2fs**:./fileSystemOper fileSystem.data dumpe2fs  
 
-  - **write*:	./fileSystemOper fileSystem.data write [path-File] [linuxFile] -> Creates a file named file under parent folder in file system, then copies the contents of the given file.
-into the new file.
+  - **write**:	./fileSystemOper fileSystem.data write [path-File] [linuxFile] 
 
   - **read**:	./fileSystemOper fileSystem.data read [path-File] [linuxFile]
 
